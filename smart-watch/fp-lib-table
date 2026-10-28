@@ -1,0 +1,10 @@
+(fp_lib_table
+	(version 7)
+	(lib
+		(name "smart-watch")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/smart-watch.pretty")
+		(options "")
+		(descr "Smart watch module footprints")
+	)
+)
