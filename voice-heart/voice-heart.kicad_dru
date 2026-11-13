@@ -1,0 +1,16 @@
+(version 1)
+# Lion Circuits standard 2-layer, 1 oz copper (lioncircuits.com/pcb-manufacturing-capabilities)
+(rule "LC min track width"
+	(constraint track_width (min 0.152mm)))
+(rule "LC min copper clearance"
+	(constraint clearance (min 0.152mm)))
+(rule "LC via to track clearance"
+	(condition "A.Type == 'Via' && B.Type == 'Track'")
+	(constraint clearance (min 0.305mm)))
+(rule "LC min drill"
+	(constraint hole_size (min 0.35mm)))
+(rule "LC min annular ring"
+	(constraint annular_width (min 0.152mm)))
+(rule "LC min silkscreen line"
+	(layer "?.Silkscreen")
+	(constraint text_thickness (min 0.152mm)))

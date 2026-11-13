@@ -2,10 +2,10 @@
 	(version 20260206)
 	(generator "pcbnew")
 	(layer "F.Cu")
-	(descr "ISD1820 voice recorder module: 1x6 2.54mm header plus speaker wire pads. Module outline (~38x42mm) is approximate.")
+	(descr "Blue ISD1820 voice recorder module, 2x6 2.54mm header (VCC GND FT P-L P-E REC + jumper column). Module outline (~38x42mm) is approximate.")
 	(tags "ISD1820 voice record playback module")
 	(property "Reference" "REF**"
-		(at 10.16 7 0)
+		(at -1.27 -2.8 0)
 		(layer "F.SilkS")
 		(effects
 			(font
@@ -15,7 +15,7 @@
 		)
 	)
 	(property "Value" "ISD1820_Module"
-		(at 10.16 40 0)
+		(at -18 30 0)
 		(layer "F.Fab")
 		(effects
 			(font
@@ -27,8 +27,8 @@
 	(attr through_hole)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_rect
-		(start -1.4 -1.4)
-		(end 13.92 1.4)
+		(start -3.94 -1.4)
+		(end 1.4 14.1)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -37,18 +37,8 @@
 		(layer "F.SilkS")
 	)
 	(fp_rect
-		(start 16.38 -1.4)
-		(end 21.72 1.4)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.SilkS")
-	)
-	(fp_rect
-		(start -12.6 -2.5)
-		(end 25.4 39.5)
+		(start -37.5 -14)
+		(end 1.5 28)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -57,8 +47,8 @@
 		(layer "F.Fab")
 	)
 	(fp_rect
-		(start -1.9 -1.9)
-		(end 22.3 1.9)
+		(start -4.4 -1.9)
+		(end 1.9 14.6)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -67,92 +57,88 @@
 		(layer "F.CrtYd")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 6.35 18 0)
+		(at -18 7 0)
 		(layer "F.Fab")
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
+				(thickness 0.16)
 			)
 		)
 	)
 	(fp_text user "VCC"
-		(at 0 3.4 90)
+		(at 1.6 0 0)
 		(layer "F.SilkS")
 		(effects
 			(font
 				(size 0.8 0.8)
-				(thickness 0.12)
+				(thickness 0.16)
 			)
+			(justify left)
 		)
 	)
 	(fp_text user "GND"
-		(at 2.54 3.4 90)
+		(at 1.6 2.54 0)
 		(layer "F.SilkS")
 		(effects
 			(font
 				(size 0.8 0.8)
-				(thickness 0.12)
+				(thickness 0.16)
 			)
-		)
-	)
-	(fp_text user "REC"
-		(at 5.08 3.4 90)
-		(layer "F.SilkS")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.12)
-			)
-		)
-	)
-	(fp_text user "PLE"
-		(at 7.62 3.4 90)
-		(layer "F.SilkS")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.12)
-			)
-		)
-	)
-	(fp_text user "PLL"
-		(at 10.16 3.4 90)
-		(layer "F.SilkS")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.12)
-			)
+			(justify left)
 		)
 	)
 	(fp_text user "FT"
-		(at 12.7 3.4 90)
+		(at 1.6 5.08 0)
 		(layer "F.SilkS")
 		(effects
 			(font
 				(size 0.8 0.8)
-				(thickness 0.12)
+				(thickness 0.16)
 			)
+			(justify left)
 		)
 	)
-	(fp_text user "SP+"
-		(at 17.78 3.4 90)
+	(fp_text user "P-L"
+		(at 1.6 7.62 0)
 		(layer "F.SilkS")
 		(effects
 			(font
 				(size 0.8 0.8)
-				(thickness 0.12)
+				(thickness 0.16)
 			)
+			(justify left)
 		)
 	)
-	(fp_text user "SP-"
-		(at 20.32 3.4 90)
+	(fp_text user "P-E"
+		(at 1.6 10.16 0)
 		(layer "F.SilkS")
 		(effects
 			(font
 				(size 0.8 0.8)
-				(thickness 0.12)
+				(thickness 0.16)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "REC"
+		(at 1.6 12.7 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.16)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "JUMPERS"
+		(at -5.3 6.35 90)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.16)
 			)
 		)
 	)
@@ -164,49 +150,77 @@
 		(remove_unused_layers no)
 	)
 	(pad "2" thru_hole circle
-		(at 2.54 0)
+		(at 0 2.54)
 		(size 1.7 1.7)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 	)
 	(pad "3" thru_hole circle
-		(at 5.08 0)
+		(at 0 5.08)
 		(size 1.7 1.7)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 	)
 	(pad "4" thru_hole circle
-		(at 7.62 0)
+		(at 0 7.62)
 		(size 1.7 1.7)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 	)
 	(pad "5" thru_hole circle
-		(at 10.16 0)
+		(at 0 10.16)
 		(size 1.7 1.7)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 	)
 	(pad "6" thru_hole circle
-		(at 12.7 0)
+		(at 0 12.7)
 		(size 1.7 1.7)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 	)
 	(pad "7" thru_hole circle
-		(at 17.78 0)
+		(at -2.54 0)
 		(size 1.7 1.7)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 	)
 	(pad "8" thru_hole circle
-		(at 20.32 0)
+		(at -2.54 2.54)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+	)
+	(pad "9" thru_hole circle
+		(at -2.54 5.08)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+	)
+	(pad "10" thru_hole circle
+		(at -2.54 7.62)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+	)
+	(pad "11" thru_hole circle
+		(at -2.54 10.16)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+	)
+	(pad "12" thru_hole circle
+		(at -2.54 12.7)
 		(size 1.7 1.7)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")

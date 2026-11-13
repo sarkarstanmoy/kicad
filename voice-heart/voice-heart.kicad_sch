@@ -63,7 +63,7 @@
 					)
 				)
 			)
-			(property "Description" "ISD1820 voice record/playback module (8-20 s, onboard mic, drives an 8 ohm speaker). REC/PLAYE/PLAYL are active HIGH."
+			(property "Description" "ISD1820 voice record/playback module, blue 2x6-header board (onboard mic, speaker plugs into the module). REC/PLAYE/PLAYL are active HIGH."
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -134,7 +134,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -152,7 +152,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -170,7 +170,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -188,43 +188,7 @@
 							)
 						)
 					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 1.27 180)
-					(length 2.54)
-					(name "SP+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 -1.27 180)
-					(length 2.54)
-					(name "SP-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1918,7 +1882,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "0a74c35f-91f8-4a4a-a6ed-8ffa11fb843f")
+		(uuid "dbfaa12e-ae72-4c90-a405-662d6f1ce187")
 	)
 	(text "POWER: 3x AAA box"
 		(exclude_from_sim no)
@@ -1930,7 +1894,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "ec602171-ff45-4328-acd1-a56ac7d72178")
+		(uuid "dc1fdb04-1609-406e-93dc-fedf568fe125")
 	)
 	(symbol
 		(lib_id "Device:Battery")
@@ -1940,7 +1904,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1fe4e030-9c35-43f2-9353-3c9d44123711")
+		(uuid "b82b3235-cb8c-4f93-a86f-17f4670ba65e")
 		(property "Reference" "BT1"
 			(at 40.64 54.61 0)
 			(show_name no)
@@ -2074,10 +2038,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f4017a6e-a4b4-4a7e-a330-4ad69389b53e")
+			(uuid "68e3540b-06ee-4630-8183-25a45cedc8f2")
 		)
 		(pin "2"
-			(uuid "1e0e4c40-29c4-4e21-9c0d-a2a292c454a9")
+			(uuid "533321c3-1921-4ce7-bba4-abecb6a3e281")
 		)
 		(instances
 			(project "voice-heart"
@@ -2097,7 +2061,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b38c6d29-5823-479e-acf4-b21641c8731b")
+		(uuid "feac1a14-e68d-4422-a02b-9210ce74c610")
 	)
 	(label "VBAT"
 		(at 38.1 49.53 90)
@@ -2107,7 +2071,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "353f9559-173a-4184-a132-e8d86cf4f52c")
+		(uuid "c0bbd094-7053-4437-b2f3-f4cef286ac9a")
 	)
 	(wire
 		(pts
@@ -2118,7 +2082,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "a2eec0e2-3d39-4771-af4c-5ff7ff66cb74")
+		(uuid "030e4a51-016d-4462-8800-d5dc4885c91f")
 	)
 	(label "GND"
 		(at 38.1 64.77 270)
@@ -2128,7 +2092,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "ab807537-023c-44f4-912c-add6826906b7")
+		(uuid "354456ef-5726-4ad4-8708-1d7ecf8d10f3")
 	)
 	(wire
 		(pts
@@ -2139,7 +2103,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4100226f-e8e2-4ca7-8717-49e6308d7f10")
+		(uuid "e3d489f4-449f-4639-a958-9b374a2b7d8a")
 	)
 	(label "VBAT"
 		(at 45.72 76.2 180)
@@ -2149,7 +2113,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "d1de8cd4-6b27-441b-be92-e1f816ac17d0")
+		(uuid "e9aa8b98-7e1c-4623-9e7f-e31fb255a91e")
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -2159,7 +2123,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "721f1c9e-c9eb-4fdb-b014-bbbb85b644a7")
+		(uuid "d22549d8-07e8-400a-bc85-86b5e84e48b6")
 		(property "Reference" "#FLG01"
 			(at 50.8 74.295 0)
 			(show_name no)
@@ -2226,7 +2190,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "e8f31742-ff24-48d7-a8a5-8af412de5985")
+			(uuid "cf3961da-032a-4788-bd70-1442614b061e")
 		)
 		(instances
 			(project "voice-heart"
@@ -2246,7 +2210,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9213b711-1b5f-4bb1-b91c-44f9331c2cd1")
+		(uuid "1c53b20f-9682-4ce9-bfad-545c2e2b77a8")
 	)
 	(label "GND"
 		(at 58.42 76.2 180)
@@ -2256,7 +2220,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "0996ff98-4da1-4e15-85b9-a397d3f9643b")
+		(uuid "8ac45bc1-a50e-4e74-b30e-b9236eeaac71")
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -2266,7 +2230,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "6800a62a-4073-41b0-88c3-91a8c46778a2")
+		(uuid "919c0a08-0132-47a6-9d91-099b05eef7ed")
 		(property "Reference" "#FLG02"
 			(at 63.5 74.295 0)
 			(show_name no)
@@ -2333,7 +2297,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "69638c76-33b6-4d77-8dc2-1a625b64400f")
+			(uuid "fb8980cf-0871-4bb2-8b53-2525f928bf84")
 		)
 		(instances
 			(project "voice-heart"
@@ -2354,9 +2318,9 @@
 		(fill
 			(type none)
 		)
-		(uuid "bd394953-54b7-4ede-9b0b-8c79cac5e5d1")
+		(uuid "9a7d2041-7025-47a7-97d1-3d964a41f5da")
 	)
-	(text "VOICE: ISD1820 record / playback"
+	(text "VOICE: ISD1820 (its speaker plugs into the module)"
 		(exclude_from_sim no)
 		(at 77.47 34.29 0)
 		(effects
@@ -2366,7 +2330,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "4688c0a6-a3b6-486a-bcd4-dd1c49fd4e29")
+		(uuid "ec444448-ddbf-423e-8a41-fafe9a492866")
 	)
 	(symbol
 		(lib_id "voice-heart:ISD1820_Module")
@@ -2376,7 +2340,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6b05e1d1-92c6-4c97-aa01-78ef26360ec8")
+		(uuid "f0c09eb9-1462-4bbd-a0db-5dfd89e5f3a5")
 		(property "Reference" "U1"
 			(at 99.06 46.99 0)
 			(show_name no)
@@ -2388,7 +2352,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "ISD1820 voice module"
+		(property "Value" "ISD1820 voice module + speaker"
 			(at 99.06 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2421,7 +2385,7 @@
 				)
 			)
 		)
-		(property "Description" "ISD1820 voice record/playback module (8-20 s, onboard mic, drives an 8 ohm speaker). REC/PLAYE/PLAYL are active HIGH."
+		(property "Description" "ISD1820 voice record/playback module, blue 2x6-header board (onboard mic, speaker plugs into the module). REC/PLAYE/PLAYL are active HIGH."
 			(at 109.22 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2432,7 +2396,7 @@
 				)
 			)
 		)
-		(property "Supplier" "Robu.in / CTC Secunderabad"
+		(property "Supplier" "Robu.in"
 			(at 109.22 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2443,7 +2407,7 @@
 				)
 			)
 		)
-		(property "Price (INR)" "100-150"
+		(property "Price (INR)" "159"
 			(at 109.22 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2454,7 +2418,7 @@
 				)
 			)
 		)
-		(property "Notes" "10 s message with the stock 100k ROSC resistor; keeps it without power"
+		(property "Notes" "Blue 2x6-header board with 8ohm speaker; leave RPL/FT jumpers off"
 			(at 109.22 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2466,28 +2430,22 @@
 			)
 		)
 		(pin "1"
-			(uuid "7121e270-ff67-49f8-9169-59c8648c926f")
+			(uuid "c9f502e9-3999-48e8-8722-e261bc086d08")
 		)
 		(pin "2"
-			(uuid "981c5f34-f5b7-4162-90dc-699c8c8a5f82")
-		)
-		(pin "3"
-			(uuid "cb6b2542-9ed2-46ce-84a4-6f7405b17971")
-		)
-		(pin "4"
-			(uuid "400a68e3-39a8-40e7-b9ed-baf56c1ab07f")
-		)
-		(pin "5"
-			(uuid "f0744616-03eb-4aab-89e4-76cb130b8657")
+			(uuid "4f852d04-1c08-4d86-a9db-4536cbac0fc1")
 		)
 		(pin "6"
-			(uuid "a7eb1ee5-c6f1-4681-b57d-efe183f74eff")
+			(uuid "67f6dc63-a2f5-4f9c-9c73-7baae241c8df")
 		)
-		(pin "7"
-			(uuid "4003539f-7df1-46e8-b533-27e9426c91d6")
+		(pin "5"
+			(uuid "4142145d-bada-4964-b94b-30624ac209e9")
 		)
-		(pin "8"
-			(uuid "4961a698-f5df-4080-8845-f54f91445c68")
+		(pin "4"
+			(uuid "8f94c107-c6e3-4ba2-a881-d4d7ef34fa38")
+		)
+		(pin "3"
+			(uuid "adfd4eea-4a7d-468a-bbc0-c7bac6056644")
 		)
 		(instances
 			(project "voice-heart"
@@ -2507,7 +2465,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1fa06d3b-a0b0-4664-a584-37a4113a3341")
+		(uuid "8635ecd4-f395-40e7-8a09-2b255fbc7fa0")
 	)
 	(label "VBAT"
 		(at 93.98 50.8 180)
@@ -2517,7 +2475,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "9cbbac13-48a0-4e59-bd8d-0c2e7203956b")
+		(uuid "219ff6c1-f3c5-4fce-a14d-f07f6c24a39c")
 	)
 	(wire
 		(pts
@@ -2528,7 +2486,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "7655de82-fa36-4a50-969f-9916f3b96e7f")
+		(uuid "55d659bd-25c7-40d5-b100-b5d810ceec52")
 	)
 	(label "GND"
 		(at 93.98 53.34 180)
@@ -2538,7 +2496,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "b6e7b0c4-2727-46f3-9c8d-78dec97017c6")
+		(uuid "72be68ca-2719-4c4c-a64a-7b8b005bf905")
 	)
 	(wire
 		(pts
@@ -2549,7 +2507,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "bfa0dd12-82f1-4751-a5b6-a9af8f6c6c0d")
+		(uuid "a80fd604-7be8-49c7-9a4f-5f1c1c3d4deb")
 	)
 	(label "REC"
 		(at 93.98 55.88 180)
@@ -2559,7 +2517,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "ac54a92a-a523-46c6-bf79-94484075d2ea")
+		(uuid "ec24d276-11b0-44e3-bdc6-c04729ba2e93")
 	)
 	(wire
 		(pts
@@ -2570,7 +2528,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4da3efdd-6e0e-4e8a-bb30-e53a593756ec")
+		(uuid "43d5035d-55ea-4ca7-b597-5f35667b58c7")
 	)
 	(label "PLAY"
 		(at 93.98 58.42 180)
@@ -2580,222 +2538,15 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "509f0492-323e-45e6-8084-5eebf5f3d54b")
+		(uuid "15ef9e0f-964b-4ee2-9e18-de4ae8a8ebcb")
 	)
 	(no_connect
 		(at 96.52 60.96)
-		(uuid "31f9f9b1-bc01-47f3-80e4-0fe21136dc74")
+		(uuid "b4d2e35a-fc07-4d20-9b60-76a2f2273aa4")
 	)
 	(no_connect
 		(at 96.52 63.5)
-		(uuid "9f7b5445-4b08-44d2-a3c8-0298d77b5ef4")
-	)
-	(wire
-		(pts
-			(xy 121.92 55.88)
-			(xy 124.46 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3bae02b-10d8-4b0e-94f9-57b4347a9239")
-	)
-	(label "SP+"
-		(at 124.46 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "869ff41d-2a69-4a53-9c32-960bf8e90d94")
-	)
-	(wire
-		(pts
-			(xy 121.92 58.42)
-			(xy 124.46 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ff18f38-64d8-4dfa-8c46-30a588270673")
-	)
-	(label "SP-"
-		(at 124.46 58.42 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "eaa02004-b7d1-4382-92a1-f55999293740")
-	)
-	(symbol
-		(lib_id "Device:Speaker")
-		(at 147.32 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9a951d0c-d617-473c-8ef9-c7623ffd5708")
-		(property "Reference" "LS1"
-			(at 148.59 51.435 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "8ohm 0.5W speaker, 28-40mm"
-			(at 139.7 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.25sqmm_1x02_P4.2mm_D0.65mm_OD1.7mm"
-			(at 147.32 62.23 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 147.066 58.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Speaker"
-			(at 147.32 57.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_keywords" "speaker sound"
-			(at 147.32 57.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "Robu.in / CTC Secunderabad"
-			(at 147.32 57.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price (INR)" "30-60"
-			(at 147.32 57.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "Glued to the back, wired to these pads"
-			(at 147.32 57.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f60c1a66-0968-466b-90c7-c78f36e5c706")
-		)
-		(pin "2"
-			(uuid "381f4812-3ce7-46d6-8c36-34b24a9ade65")
-		)
-		(instances
-			(project "voice-heart"
-				(path "/6a2b8f1e-0c4d-4b7a-9e21-5d3c7a1f0b01"
-					(reference "LS1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 142.24 57.15)
-			(xy 139.7 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "805a53d4-515a-459d-bcbb-e57bedf4d060")
-	)
-	(label "SP+"
-		(at 139.7 57.15 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "89f6a9a3-6a3b-4963-bd60-54b066001f73")
-	)
-	(wire
-		(pts
-			(xy 142.24 59.69)
-			(xy 139.7 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbe0b589-e25e-4350-b57d-048516562bc1")
-	)
-	(label "SP-"
-		(at 139.7 59.69 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6eea0485-2b33-4713-8684-ce3b14b91f2d")
+		(uuid "3c5baffc-d031-4db6-9b32-9e9ecad1fdee")
 	)
 	(rectangle
 		(start 20.32 88.9)
@@ -2807,7 +2558,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "dfaa023a-242b-434f-9a00-36120c9c7c85")
+		(uuid "769b1c7d-dbbc-49e8-b581-e1bff7da47bf")
 	)
 	(text "BUTTONS (to VBAT, active HIGH)"
 		(exclude_from_sim no)
@@ -2819,7 +2570,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "5eb0c943-eb00-46ab-a75b-f84c37def88e")
+		(uuid "2338131d-6c1a-498f-b641-a6238f967214")
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
@@ -2829,7 +2580,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2a23fa1f-337b-4c78-8312-d5eb62e26c1a")
+		(uuid "001768e3-ea5f-4a77-8b8e-75044ecaa2a9")
 		(property "Reference" "SW1"
 			(at 46.99 101.6 0)
 			(show_name no)
@@ -2929,10 +2680,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "54bd8885-ebac-44a5-84cd-ebfe98049f8d")
+			(uuid "0dead3eb-a9e1-424a-bd16-413f504e431a")
 		)
 		(pin "2"
-			(uuid "5c9d8fd1-067e-4c6d-8625-f9401bcc7b15")
+			(uuid "81fea130-18ea-414d-a465-70b3eb2e6373")
 		)
 		(instances
 			(project "voice-heart"
@@ -2952,7 +2703,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "14d03099-0582-4892-a370-eaff7e0be809")
+		(uuid "e89506ab-5033-41fb-ad29-a19cf45720f2")
 	)
 	(label "VBAT"
 		(at 38.1 104.14 180)
@@ -2962,7 +2713,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "08789bcd-e1b0-4d29-9f72-a70d67f3c342")
+		(uuid "66efa5e1-9d50-4ed8-9eca-f5e3155e11a9")
 	)
 	(wire
 		(pts
@@ -2973,7 +2724,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "449538da-6519-4855-96a5-9bd772889e84")
+		(uuid "bc662a27-3792-43fe-91a8-5bde659b7e12")
 	)
 	(label "PLAY"
 		(at 53.34 104.14 0)
@@ -2983,7 +2734,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "1570284f-b850-499e-9388-938b64577504")
+		(uuid "f09df80a-e779-4a28-8e0b-5796546a1505")
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
@@ -2993,7 +2744,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "df8b512a-2ae4-4217-9774-42f1998891b0")
+		(uuid "238ce424-2667-4af0-b5ea-3e7ff91071cc")
 		(property "Reference" "SW2"
 			(at 46.99 116.84 0)
 			(show_name no)
@@ -3093,10 +2844,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "8dbe7a8f-d201-4f66-bd9b-9b050aa28f50")
+			(uuid "312cf607-ec98-4a20-9f00-f0d9d4c3f616")
 		)
 		(pin "2"
-			(uuid "a1cd5b0d-3dec-41b3-8a99-fe9919751671")
+			(uuid "0ada2f79-d6cd-4739-9260-41da73360b17")
 		)
 		(instances
 			(project "voice-heart"
@@ -3116,7 +2867,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9cfffa51-eb0b-4dcf-9409-fb2ffa3c11ef")
+		(uuid "3f68a244-4f49-4cd9-8d18-dacd4d4da081")
 	)
 	(label "VBAT"
 		(at 38.1 119.38 180)
@@ -3126,7 +2877,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "88d17c0f-1a26-4a7c-9604-9a171962c666")
+		(uuid "924dac6a-141b-4550-af97-df0e8e6467ca")
 	)
 	(wire
 		(pts
@@ -3137,7 +2888,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "5a3b6e38-5b3c-47a8-8bde-6bcc3673fa6f")
+		(uuid "63a076c1-fdb8-4b05-8b30-1fa4d1dc7937")
 	)
 	(label "REC"
 		(at 53.34 119.38 0)
@@ -3147,7 +2898,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "695e120c-7646-4f55-87d8-46f6f5ca6547")
+		(uuid "f0c04e30-2151-43e4-ad4a-f025e1877224")
 	)
 	(rectangle
 		(start 76.2 88.9)
@@ -3159,7 +2910,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "a847d8b1-2e23-4ac0-9c26-a181aa43921b")
+		(uuid "729503e0-eb8c-49a4-b74e-028b3e2a5808")
 	)
 	(text "GLOW TIMER: press -> LEDs on ~10 s -> fade out"
 		(exclude_from_sim no)
@@ -3171,7 +2922,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "13ddeb66-9bf6-44f9-a855-5b8231fa1ea7")
+		(uuid "d2b74943-8fd6-4b17-82e2-85dbc0375354")
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
@@ -3181,7 +2932,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "fff64238-37ed-44eb-9953-6512cc803b89")
+		(uuid "6cdfa5a2-7ec0-4cc1-8087-20c40003468c")
 		(property "Reference" "D11"
 			(at 92.71 99.06 0)
 			(show_name no)
@@ -3313,10 +3064,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "81933d8f-e91b-4592-90ce-4244faeb1dc5")
+			(uuid "98bdbd66-94c1-4036-9188-0a3fbd5a0963")
 		)
 		(pin "2"
-			(uuid "b95f3b25-8565-47d3-ab30-82410f52e319")
+			(uuid "07899786-8519-4245-8935-82ac7177d650")
 		)
 		(instances
 			(project "voice-heart"
@@ -3336,7 +3087,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "08f0ab62-b81f-47be-ba31-365b886c9e99")
+		(uuid "15db205a-67b3-4c6e-9611-bf18954e3085")
 	)
 	(label "PLAY"
 		(at 99.06 101.6 0)
@@ -3346,7 +3097,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "418b50a2-fc19-4a4e-8dfc-5c0d68969362")
+		(uuid "b5a672cf-9492-4c67-b559-b799b1b6f9bd")
 	)
 	(wire
 		(pts
@@ -3357,7 +3108,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "407aeca3-7fa0-403d-b867-8e9a732b7782")
+		(uuid "b3cbf867-8c98-48ee-ba16-43195167cceb")
 	)
 	(label "FADE"
 		(at 86.36 101.6 180)
@@ -3367,7 +3118,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "7331bec5-a656-4da4-9664-ce3621092f86")
+		(uuid "0ccf0732-b5b4-43f8-93e7-82324667b0d8")
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
@@ -3377,7 +3128,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0e1206f7-e26b-4c4c-867b-352ce5267e61")
+		(uuid "6db9a5ed-3edb-4d76-ae88-b34dbe3e321e")
 		(property "Reference" "D12"
 			(at 92.71 114.3 0)
 			(show_name no)
@@ -3509,10 +3260,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "cb625796-d073-4a6a-81da-bb49bf808064")
+			(uuid "07fba643-b8ec-4578-ad68-5950f03a16d8")
 		)
 		(pin "2"
-			(uuid "c9845155-f4fa-485c-8012-64a72d28041d")
+			(uuid "389b1613-2f32-4a5d-990f-1ccacc01d1d9")
 		)
 		(instances
 			(project "voice-heart"
@@ -3532,7 +3283,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "197a356a-ba6b-498c-a9bd-5db804a652ae")
+		(uuid "3d331dc0-2f6b-4a9b-87c2-4db4b9a8ae6d")
 	)
 	(label "REC"
 		(at 99.06 116.84 0)
@@ -3542,7 +3293,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "db4d5f3c-99e3-4b51-add0-df2ce8f6e30d")
+		(uuid "09c943d1-fab7-4c2d-a879-6cc99602e2e7")
 	)
 	(wire
 		(pts
@@ -3553,7 +3304,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1c728395-51f4-4265-8e3e-9845e6e40618")
+		(uuid "b7efc3cc-f620-402c-a65f-36204936139f")
 	)
 	(label "FADE"
 		(at 86.36 116.84 180)
@@ -3563,7 +3314,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "f5cc0592-1e37-4138-8d73-ea5fbbee41a0")
+		(uuid "86f940a2-c30a-43e2-a8d5-ddd842a718e0")
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
@@ -3573,7 +3324,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ba76b144-85d6-4b8a-9e2b-ae9c5a19a368")
+		(uuid "5b8920b2-e0e4-4cc0-837e-cb605d1c4eee")
 		(property "Reference" "C1"
 			(at 113.665 109.22 0)
 			(show_name no)
@@ -3685,10 +3436,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "1610c39f-5c14-4589-a8ee-9777d85554d6")
+			(uuid "831d5afb-d727-44e0-b06a-a58317348e16")
 		)
 		(pin "2"
-			(uuid "07a2b7f3-289b-429f-bf7e-ee7a33f61dac")
+			(uuid "884e72f8-1ff2-4e60-89c4-8e58bf194a2a")
 		)
 		(instances
 			(project "voice-heart"
@@ -3708,7 +3459,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "2a65de04-8bde-4532-ada5-6f001db519b1")
+		(uuid "55c400be-b256-4b53-a220-a00460caa5f6")
 	)
 	(label "FADE"
 		(at 113.03 105.41 90)
@@ -3718,7 +3469,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "08d11976-2d0c-48e1-b682-1fb8891405ef")
+		(uuid "f7b4229c-ce26-45e1-830d-25422d47de48")
 	)
 	(wire
 		(pts
@@ -3729,7 +3480,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1dfcdcd8-6a18-40b0-808d-f7d6e2599dbb")
+		(uuid "ad4be422-ccb6-4d51-8f92-26a7bac5a449")
 	)
 	(label "GND"
 		(at 113.03 118.11 270)
@@ -3739,7 +3490,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "eba8640b-79f1-4ec7-a69f-341fd34cd71c")
+		(uuid "e9150b9c-5198-4c7e-bbe5-8fd733887326")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -3749,7 +3500,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "97df0015-d2d0-4191-8bec-dbca4ac1abdf")
+		(uuid "ca62c9fa-11ed-4698-9c33-24cf415ebd2f")
 		(property "Reference" "R11"
 			(at 127.762 111.76 90)
 			(show_name no)
@@ -3859,10 +3610,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "77b7755d-f21f-4dd8-b59d-2f115e57b4f8")
+			(uuid "4b33e519-c5c1-4174-a329-4eda511c177e")
 		)
 		(pin "2"
-			(uuid "4527bc2b-faa0-4e9a-8c91-eb2ea804063d")
+			(uuid "28b953fe-a3bc-4994-8050-d57f85b2496b")
 		)
 		(instances
 			(project "voice-heart"
@@ -3882,7 +3633,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ac4e168b-3979-4856-91bc-1aa394385818")
+		(uuid "7e1d68a5-f5cc-492f-8a6c-458d2f56da66")
 	)
 	(label "FADE"
 		(at 125.73 105.41 90)
@@ -3892,7 +3643,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "c3e72d02-8584-4721-88ea-638d6765686d")
+		(uuid "bea9b7ac-0104-488f-a8b6-f4d2699aabd8")
 	)
 	(wire
 		(pts
@@ -3903,7 +3654,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "95fd8f80-1e6c-438c-ae81-1154d39f436a")
+		(uuid "336f248d-ee40-4464-8e96-3f30887bfbf0")
 	)
 	(label "BASE"
 		(at 125.73 118.11 270)
@@ -3913,7 +3664,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "d832132f-1885-478f-8d83-9258c214e329")
+		(uuid "48c32360-82c9-49d7-a820-217c31a17fcd")
 	)
 	(symbol
 		(lib_id "Transistor_BJT:BC517")
@@ -3923,7 +3674,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b023ce6e-0d06-47f2-a188-ae42f04947f1")
+		(uuid "2aa13c00-c8dc-4cf9-bb2d-2733577df091")
 		(property "Reference" "Q1"
 			(at 151.13 109.855 0)
 			(show_name no)
@@ -4038,13 +3789,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "8afd283b-651d-4cfd-b134-556dfefefcd8")
+			(uuid "9cba7de1-818f-4da0-a45a-f6802dc9a40d")
 		)
 		(pin "2"
-			(uuid "8e56d5be-8442-4e38-a006-70a02e0b694e")
+			(uuid "9f6c9df0-ce52-4eee-924f-58297c578464")
 		)
 		(pin "3"
-			(uuid "cf124264-bf79-4db8-8cb2-67efe9b16bf6")
+			(uuid "79daa45d-ab7a-4ba2-9fd9-266d2dba3092")
 		)
 		(instances
 			(project "voice-heart"
@@ -4064,7 +3815,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4a5cd89d-f340-49ff-88c7-c4b674f8924b")
+		(uuid "e128ae3e-7141-45fa-87e4-963346d0c822")
 	)
 	(label "BASE"
 		(at 138.43 111.76 180)
@@ -4074,7 +3825,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "0973e86d-85fe-4236-8fb5-53fc3cb0a6a8")
+		(uuid "0d120012-2298-4022-8717-9f7e7f9a7b5f")
 	)
 	(wire
 		(pts
@@ -4085,7 +3836,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b1f601c1-24d2-40b8-ba27-3bc641501156")
+		(uuid "f0a55ca0-bb2b-416a-9f9f-25fcedaacf15")
 	)
 	(label "LED_K"
 		(at 148.59 104.14 90)
@@ -4095,7 +3846,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "390f3b52-966e-4419-88af-f78bd544043b")
+		(uuid "5e28e88e-f6f3-4e67-a182-1b5431624c4c")
 	)
 	(wire
 		(pts
@@ -4106,7 +3857,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "3f4a97c8-a97c-4456-9455-3fe3db556928")
+		(uuid "782aa298-78b9-4d38-95c3-02d753d33565")
 	)
 	(label "GND"
 		(at 148.59 119.38 270)
@@ -4116,7 +3867,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "568b6dc2-fd19-44a2-923c-85f8a05cb157")
+		(uuid "0bd90929-c68f-4171-b76a-e21b797223d1")
 	)
 	(rectangle
 		(start 20.32 137.16)
@@ -4128,7 +3879,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "326028bc-b496-4e14-83b9-17a5edf18c44")
+		(uuid "327a6672-3698-47ee-8fb5-638957f305a1")
 	)
 	(text "HEART LEDs: 10x red 5mm, 330R each (~6 mA)"
 		(exclude_from_sim no)
@@ -4140,7 +3891,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "ea28f676-4862-48ad-be7e-43eac46bc8b8")
+		(uuid "29da914b-c9fc-4729-ad94-2d4c76c2d2b2")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -4150,7 +3901,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6eee4a4f-c830-4099-a5fc-ee5fcdee0ee0")
+		(uuid "c67b83b5-2dce-4b09-9f6b-e4c489ffb6a6")
 		(property "Reference" "R1"
 			(at 40.132 152.4 90)
 			(show_name no)
@@ -4260,10 +4011,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "6d08235f-78c8-428c-aae2-b6925dc01b3f")
+			(uuid "74cf376e-8426-4752-acb3-23c373d435cb")
 		)
 		(pin "2"
-			(uuid "5d308058-9097-4999-bd15-ee4541fb9a1b")
+			(uuid "ec46c024-bc1f-4067-8939-55bba2aa5aa5")
 		)
 		(instances
 			(project "voice-heart"
@@ -4282,7 +4033,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9022e96f-a08c-475e-9cd0-1e45143b8e56")
+		(uuid "46383d0e-3a4b-4f1f-a17c-968396d3092c")
 		(property "Reference" "D1"
 			(at 34.29 157.48 0)
 			(show_name no)
@@ -4404,10 +4155,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "fcee022e-1f6a-473d-bceb-304b942df94b")
+			(uuid "eef06ceb-6b19-4f10-940e-fda4cbee7d30")
 		)
 		(pin "2"
-			(uuid "7b0a6572-a704-420e-b46d-8bffce54b7bf")
+			(uuid "1bd36c84-e5f3-4628-8726-9230c1063edd")
 		)
 		(instances
 			(project "voice-heart"
@@ -4427,7 +4178,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ecf559d5-9525-40a7-9d39-5b1be4d8d161")
+		(uuid "10ee99b2-0c66-4fc8-b523-24676129f5f5")
 	)
 	(label "VBAT"
 		(at 38.1 146.05 90)
@@ -4437,7 +4188,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "ae3480fd-e1f6-461f-a7b5-0533d05877b6")
+		(uuid "58a67b84-8ef4-4039-b341-5651ab905403")
 	)
 	(wire
 		(pts
@@ -4448,7 +4199,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "306b8fcd-6167-4ac3-b430-77731ce8b60d")
+		(uuid "b3c70d2d-d3f1-40ba-9300-09f0b5a723ae")
 	)
 	(wire
 		(pts
@@ -4459,7 +4210,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "926be2f8-3ab2-4739-be49-853266056fae")
+		(uuid "e18b6d40-db05-4773-b060-2c0426d5270f")
 	)
 	(label "LED_K"
 		(at 27.94 160.02 180)
@@ -4469,7 +4220,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "4d456154-8554-4d10-9a8d-c3b5e77e6a64")
+		(uuid "db1675c2-03fd-4e26-8ca4-16ebf077e513")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -4479,7 +4230,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2729fc0d-abd4-4155-964a-7c210a3aaf0a")
+		(uuid "9d884bf4-cf8f-48e7-8560-71dbf2739037")
 		(property "Reference" "R2"
 			(at 60.452 152.4 90)
 			(show_name no)
@@ -4589,10 +4340,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "10d292fa-d8f0-46a2-95de-257d226d5728")
+			(uuid "01a28481-2325-4c53-b173-bc16f200ddcc")
 		)
 		(pin "2"
-			(uuid "b20c2504-877b-4eca-b9af-c66ce5d98ea6")
+			(uuid "cd0f825c-b5d4-4656-a522-4fc5d744dd4c")
 		)
 		(instances
 			(project "voice-heart"
@@ -4611,7 +4362,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0c04afeb-c033-42cb-a420-e8919a18d5fc")
+		(uuid "0b5d5364-b78a-4605-9e3d-194d6b70cf08")
 		(property "Reference" "D2"
 			(at 54.61 157.48 0)
 			(show_name no)
@@ -4733,10 +4484,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "0151aacb-d2a2-4630-aa73-4d337448c6eb")
+			(uuid "12cea876-d8d0-4e6e-bb6e-27829708d122")
 		)
 		(pin "2"
-			(uuid "3d8d55b2-9e97-42ee-9d28-edeb32ddaa78")
+			(uuid "995b511f-f85e-43f0-b818-b4d075d534d2")
 		)
 		(instances
 			(project "voice-heart"
@@ -4756,7 +4507,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b8c57631-04fc-426d-b234-e142cbb412b3")
+		(uuid "8f4e1ed6-4de9-4a27-8ef0-c5ead5f913e2")
 	)
 	(label "VBAT"
 		(at 58.42 146.05 90)
@@ -4766,7 +4517,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "2c62df60-6233-449f-abff-6c728e0bccef")
+		(uuid "ae0a1bab-b503-4f12-ba8e-48b7eae16f3c")
 	)
 	(wire
 		(pts
@@ -4777,7 +4528,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "653c0c83-a7bb-4870-afb3-380b7b9e0853")
+		(uuid "c8f93e31-f5d0-48f8-b87a-415ee6a42c93")
 	)
 	(wire
 		(pts
@@ -4788,7 +4539,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c5f0894e-c0c2-4707-952d-9d97bc912bb2")
+		(uuid "9ef85db3-9619-41ae-85d0-37428d08cd9f")
 	)
 	(label "LED_K"
 		(at 48.26 160.02 180)
@@ -4798,7 +4549,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "8156877c-56c7-45ac-a533-280981b3af5e")
+		(uuid "4ea3e0d3-33db-48c7-b77a-fd6e89c8534c")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -4808,7 +4559,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8d1b3299-cac3-41c7-ad98-ebfeca3a80a1")
+		(uuid "c9f647d5-2626-4c9d-a0f5-2108263b5324")
 		(property "Reference" "R3"
 			(at 80.772 152.4 90)
 			(show_name no)
@@ -4918,10 +4669,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "13557a44-bbfa-470e-9418-1c05469b58fb")
+			(uuid "20ce6e61-a20f-4b4d-a01f-0053eba348c6")
 		)
 		(pin "2"
-			(uuid "33d3c733-973a-461a-a9ec-e8c168778cd6")
+			(uuid "4e59ebf1-6de5-4b60-9baf-813ca3b8a757")
 		)
 		(instances
 			(project "voice-heart"
@@ -4940,7 +4691,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "baf5e941-ba7c-4664-aa5a-084340432ef8")
+		(uuid "77fe0bb4-f07e-46d8-bc87-1a1f85177f51")
 		(property "Reference" "D3"
 			(at 74.93 157.48 0)
 			(show_name no)
@@ -5062,10 +4813,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "208e0bd6-2cec-4dc1-9872-77963e6328e8")
+			(uuid "057bd798-796f-4683-a589-943c2c174f7c")
 		)
 		(pin "2"
-			(uuid "75383f9d-2335-4838-a42a-115450b97b5b")
+			(uuid "968cbde1-c063-47be-ac82-02b7d41d825a")
 		)
 		(instances
 			(project "voice-heart"
@@ -5085,7 +4836,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c36d0853-e0de-4194-83eb-b5e1e60eb15a")
+		(uuid "ed20d5f2-3677-4ab6-af61-e09d234184f1")
 	)
 	(label "VBAT"
 		(at 78.74 146.05 90)
@@ -5095,7 +4846,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "fd9b6b02-067f-44c3-9f86-821751e06eb7")
+		(uuid "ffb40989-df8c-4dba-b1eb-bf95987d0bbe")
 	)
 	(wire
 		(pts
@@ -5106,7 +4857,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b86b0ede-fb7c-43d9-b482-b52ffbca98aa")
+		(uuid "76409c4c-7fd7-4267-a965-3ec7d842a1fa")
 	)
 	(wire
 		(pts
@@ -5117,7 +4868,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b460f4fb-6c65-4f29-a55f-becd89d0a4af")
+		(uuid "23708057-8e41-44ea-86e3-ad7c5938ac2a")
 	)
 	(label "LED_K"
 		(at 68.58 160.02 180)
@@ -5127,7 +4878,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "261c1dc5-b988-402d-bb45-c339f2ba8c94")
+		(uuid "855bd6e5-938d-4238-af3f-49ad0d8ae621")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -5137,7 +4888,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7437fb65-5fbc-45e3-87e0-2ec0be39dfde")
+		(uuid "2b758524-9f7a-4718-9939-42db1b99f344")
 		(property "Reference" "R4"
 			(at 101.092 152.4 90)
 			(show_name no)
@@ -5247,10 +4998,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "d00a9c4b-b19e-457e-bf45-82ef64527e7a")
+			(uuid "92bf19d4-1e96-4f6c-b982-28e40243a69d")
 		)
 		(pin "2"
-			(uuid "3cc86ff8-1579-48f1-b6f2-c8c17f4b7b26")
+			(uuid "42e178f1-4642-4423-a4b8-9e1c294263db")
 		)
 		(instances
 			(project "voice-heart"
@@ -5269,7 +5020,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4f3c90f0-a69d-461d-897c-63170bd6223c")
+		(uuid "bbdbaf0b-acc5-4d60-aae2-a84e137c5541")
 		(property "Reference" "D4"
 			(at 95.25 157.48 0)
 			(show_name no)
@@ -5391,10 +5142,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "bca567d1-9856-4d85-8d66-c4ff030a5932")
+			(uuid "0f90b987-f0df-43e5-ae39-134708e39389")
 		)
 		(pin "2"
-			(uuid "52bc4b55-240a-42a3-9ed1-23abae9328df")
+			(uuid "144a0c65-2b3b-47f2-9d79-dd5d33eb75f4")
 		)
 		(instances
 			(project "voice-heart"
@@ -5414,7 +5165,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "5453e260-2368-4a3c-b39b-d87a96ee0fbc")
+		(uuid "0c57e7c3-28a9-4d1b-87d2-b6bbc7ad3247")
 	)
 	(label "VBAT"
 		(at 99.06 146.05 90)
@@ -5424,7 +5175,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "9bd3b9b1-cf48-4810-abdd-1323bbb5a328")
+		(uuid "540f1843-0071-49c4-86ef-361ef39cc9b8")
 	)
 	(wire
 		(pts
@@ -5435,7 +5186,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "17d579e5-bbed-43d5-97ab-d1c508a3d29b")
+		(uuid "36cd6725-8e1c-47a1-8f2a-4f26da8aa6b4")
 	)
 	(wire
 		(pts
@@ -5446,7 +5197,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c7b8724f-de43-4902-9dd7-84f92a893e6a")
+		(uuid "e8774835-4052-4ba2-a4f6-a3361fe4be6b")
 	)
 	(label "LED_K"
 		(at 88.9 160.02 180)
@@ -5456,7 +5207,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "91421a0d-2e58-4264-b215-c82d31aa2cc7")
+		(uuid "4af8d0fc-20ac-45ef-871c-dd37c464958f")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -5466,7 +5217,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6cd377bd-ab69-46b2-a3c5-c121f35064aa")
+		(uuid "5cae1b5f-cbd1-4df0-8692-c799a85de601")
 		(property "Reference" "R5"
 			(at 121.412 152.4 90)
 			(show_name no)
@@ -5576,10 +5327,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "be81ec84-dda5-452a-b55d-93f355001537")
+			(uuid "159b3ac0-d393-4a89-a5b7-96b6fa0b8f33")
 		)
 		(pin "2"
-			(uuid "e9403c22-d759-49bb-9855-a356ce9227ae")
+			(uuid "58e5ea20-4029-4a6b-9129-19ffd3486c3c")
 		)
 		(instances
 			(project "voice-heart"
@@ -5598,7 +5349,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0520de0d-9531-41b8-876e-a43e477b04ef")
+		(uuid "ab535729-f366-4a4f-a269-250e16ef515a")
 		(property "Reference" "D5"
 			(at 115.57 157.48 0)
 			(show_name no)
@@ -5720,10 +5471,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "4b92bc76-128c-4797-8ec8-7254e9ef7291")
+			(uuid "062969cc-44ca-4d9a-80e5-31204ba79c74")
 		)
 		(pin "2"
-			(uuid "0926f6e0-3ad6-48a5-b26f-e4c85fdd27dc")
+			(uuid "97495b72-dbf3-4c8d-a993-88b0b4b09545")
 		)
 		(instances
 			(project "voice-heart"
@@ -5743,7 +5494,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "31e549b1-321a-4b9c-a005-58e55c13da0c")
+		(uuid "e8800f50-bf8a-47ef-86cd-5071af659c5a")
 	)
 	(label "VBAT"
 		(at 119.38 146.05 90)
@@ -5753,7 +5504,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "51cae9fa-987d-4ddb-99dc-59146bd80b81")
+		(uuid "e26fbed8-4a63-4f3a-a673-b1767b241684")
 	)
 	(wire
 		(pts
@@ -5764,7 +5515,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "0accc275-4485-42d0-b866-641c44e4f599")
+		(uuid "2605fb6e-346f-4302-a7ac-a1574d5e0637")
 	)
 	(wire
 		(pts
@@ -5775,7 +5526,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c5c0f1ed-4e15-471b-b8e5-ed9fc78e1ff6")
+		(uuid "52452796-efe7-4e88-b044-727f8b1735b9")
 	)
 	(label "LED_K"
 		(at 109.22 160.02 180)
@@ -5785,7 +5536,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "2f706a52-b745-4748-8587-2047d3517ed2")
+		(uuid "e8e9e973-8fea-452f-b08f-6dfa284e3fcf")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -5795,7 +5546,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a85c6cf3-469b-43d9-86ac-e59929b04da0")
+		(uuid "25a4ac20-86a5-4690-a894-3a7a50062737")
 		(property "Reference" "R6"
 			(at 141.732 152.4 90)
 			(show_name no)
@@ -5905,10 +5656,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "27b3aec6-4c00-4a54-afc9-7029632a5585")
+			(uuid "047cef51-3c9a-4010-97f7-afddca3074d5")
 		)
 		(pin "2"
-			(uuid "37e569de-de19-4d02-8578-a9f471db5491")
+			(uuid "2bdc6c81-fd5c-43c2-89fc-a199bc106578")
 		)
 		(instances
 			(project "voice-heart"
@@ -5927,7 +5678,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "32d77f18-bf8f-4014-96c0-7f82ba5ee89b")
+		(uuid "8afa9e7e-833d-4eed-8c35-cf6f1dafa60e")
 		(property "Reference" "D6"
 			(at 135.89 157.48 0)
 			(show_name no)
@@ -6049,10 +5800,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "ccf51c01-b7e1-4332-8a94-f102c8114729")
+			(uuid "6a3ecb95-d570-44b2-82fa-db905c0bf3df")
 		)
 		(pin "2"
-			(uuid "9c22bfaa-495a-4f9e-bfc0-5df1556477be")
+			(uuid "dff15c50-6c76-4232-8298-a67e255a65b2")
 		)
 		(instances
 			(project "voice-heart"
@@ -6072,7 +5823,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "cc9166b2-d756-4023-bb68-e68a7fbc88eb")
+		(uuid "b3f2c19c-8919-46d6-a28b-1dd52827817c")
 	)
 	(label "VBAT"
 		(at 139.7 146.05 90)
@@ -6082,7 +5833,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "31a15c11-1781-491b-ad6e-fc7c8f876b12")
+		(uuid "687f02e6-e2a0-44b7-943b-bdd481afe060")
 	)
 	(wire
 		(pts
@@ -6093,7 +5844,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "fab70e68-7e8e-458e-8e37-2c85119f4901")
+		(uuid "e4c01e8d-e9c8-48ce-9bf2-af1b97b6f34e")
 	)
 	(wire
 		(pts
@@ -6104,7 +5855,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ebe38d7f-178c-46cf-9af9-6fe6458356fa")
+		(uuid "0f283e09-2f7c-457f-87e8-56261fb7c9d0")
 	)
 	(label "LED_K"
 		(at 129.54 160.02 180)
@@ -6114,7 +5865,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "345a9ecf-3fd5-4330-ba01-aba8b6d28501")
+		(uuid "f74e50ea-0e37-4ada-aa5a-d736f042906b")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -6124,7 +5875,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "cedf3137-8a49-4cd8-af6a-9d1531175d1e")
+		(uuid "9b600ca1-8934-44fc-a6a6-d1c4f581de16")
 		(property "Reference" "R7"
 			(at 162.052 152.4 90)
 			(show_name no)
@@ -6234,10 +5985,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "5004cf6b-c884-4f8e-8603-79170b5606be")
+			(uuid "8b7aee54-ccce-47fa-b331-1c0147eecf56")
 		)
 		(pin "2"
-			(uuid "56d66ead-b584-4375-a8bf-36e307af06a8")
+			(uuid "b4fe8199-b49e-40d3-ac65-671578fd440b")
 		)
 		(instances
 			(project "voice-heart"
@@ -6256,7 +6007,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d66553af-102d-4162-a67d-15815bc0468d")
+		(uuid "c111f1ec-665a-4c7e-a529-9ccb2f40a422")
 		(property "Reference" "D7"
 			(at 156.21 157.48 0)
 			(show_name no)
@@ -6378,10 +6129,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "6ea272eb-b89a-47f1-b1a1-84cc6a6e2ba2")
+			(uuid "8ef74f1d-0992-4c89-a903-75e1c42b4938")
 		)
 		(pin "2"
-			(uuid "0e10e1d9-8365-4276-b4be-9d2164210947")
+			(uuid "e4a51822-d2ca-40ff-9175-08eb738d74c9")
 		)
 		(instances
 			(project "voice-heart"
@@ -6401,7 +6152,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e8673bae-4521-4b74-9740-950f55de79d1")
+		(uuid "f1a86620-0dec-40ee-a1b9-a104b5a03c77")
 	)
 	(label "VBAT"
 		(at 160.02 146.05 90)
@@ -6411,7 +6162,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "7c210338-0b9b-4cf3-b2a9-369743683d95")
+		(uuid "d699aa87-0dd9-4fc1-85d4-fb90f1e067a2")
 	)
 	(wire
 		(pts
@@ -6422,7 +6173,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "74398a21-9198-4780-869c-e58afb178ae9")
+		(uuid "8aedac8d-22e5-40f3-bb23-d6f9741f0f5d")
 	)
 	(wire
 		(pts
@@ -6433,7 +6184,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1bbac835-99a8-44ee-905b-850f1d60a6a0")
+		(uuid "5731d480-f385-4791-99a0-c9074e286c04")
 	)
 	(label "LED_K"
 		(at 149.86 160.02 180)
@@ -6443,7 +6194,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "5d931616-b49b-4371-88f4-9e9398baee98")
+		(uuid "89affe57-211b-45b1-9ee7-fee6df95a28d")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -6453,7 +6204,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "06f9643e-8db7-4242-b021-09aafe87ce4e")
+		(uuid "d6707924-881a-4a80-8c47-4719a7e0778d")
 		(property "Reference" "R8"
 			(at 182.372 152.4 90)
 			(show_name no)
@@ -6563,10 +6314,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "aa1a5be6-fdef-40aa-a39f-46c12c9df356")
+			(uuid "729549fc-3bae-4324-99d5-a98907a454b5")
 		)
 		(pin "2"
-			(uuid "6d1afa21-c64d-4064-a4f0-ea4f96e09f2d")
+			(uuid "aad9308a-4d7e-4eb8-b50a-5420c1516fc8")
 		)
 		(instances
 			(project "voice-heart"
@@ -6585,7 +6336,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f065f39b-5e4b-4f79-836e-1298879fd439")
+		(uuid "ba8d5cb0-473f-46db-a748-1696d062094d")
 		(property "Reference" "D8"
 			(at 176.53 157.48 0)
 			(show_name no)
@@ -6707,10 +6458,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "bf0d9ac7-2eed-404d-a41c-f76f91e7602b")
+			(uuid "20a17d47-a124-4f44-906a-adf5bcbbcd82")
 		)
 		(pin "2"
-			(uuid "5371ebd2-3363-4e1e-b02a-5de5972203bb")
+			(uuid "19103bc5-6377-4248-abe1-6d7ecfa64323")
 		)
 		(instances
 			(project "voice-heart"
@@ -6730,7 +6481,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "6e42a716-a0e0-4145-8c11-4544d20ab0de")
+		(uuid "5db0e848-3103-4ed3-915f-9607143e8a59")
 	)
 	(label "VBAT"
 		(at 180.34 146.05 90)
@@ -6740,7 +6491,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "62add905-2f76-4381-8d82-2b7b8b884213")
+		(uuid "696bdfe0-5613-4f0e-9a44-0d8ea12152ac")
 	)
 	(wire
 		(pts
@@ -6751,7 +6502,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c1052cf8-5c14-427e-a968-715a920d1ac7")
+		(uuid "d8488baa-4fb0-4a72-a898-5630f8fb2e42")
 	)
 	(wire
 		(pts
@@ -6762,7 +6513,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "41d2cdf3-0e2f-4ca6-abbb-8765ec1ec05b")
+		(uuid "f5782497-95dc-48c4-8e7a-aa7ff0a88044")
 	)
 	(label "LED_K"
 		(at 170.18 160.02 180)
@@ -6772,7 +6523,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "f5dd7312-3630-4648-a665-81072cde47cf")
+		(uuid "c6833cd7-5cd5-46b8-b58a-01495cefb9ac")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -6782,7 +6533,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2c30db2e-94eb-4b3d-8927-1660550da500")
+		(uuid "bed059cb-d495-4b7d-8af2-eaf25c5d9f80")
 		(property "Reference" "R9"
 			(at 202.692 152.4 90)
 			(show_name no)
@@ -6892,10 +6643,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "c50ae303-f0a6-4ac8-9e2f-69f996765610")
+			(uuid "eea06ae8-47a8-4098-8ca0-a78fd9b2b913")
 		)
 		(pin "2"
-			(uuid "44bb99e3-b2c7-453a-9d8b-ec2e850de56f")
+			(uuid "a1953d8a-7999-4808-ba27-d117f4c25a12")
 		)
 		(instances
 			(project "voice-heart"
@@ -6914,7 +6665,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8f242a25-1f6c-47fe-9bda-0837ebe4497a")
+		(uuid "6374549c-215e-42e8-a1a9-5a4722315b7f")
 		(property "Reference" "D9"
 			(at 196.85 157.48 0)
 			(show_name no)
@@ -7036,10 +6787,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "bc8c364c-10e1-4b0f-ae8d-361f3ffb0933")
+			(uuid "2b0a5c6b-ae45-499a-a6e4-6ae7a764d4ff")
 		)
 		(pin "2"
-			(uuid "44ee2c0c-ca7a-4dfe-8faf-71c117a946d8")
+			(uuid "1900ef43-cf95-41cf-a172-d30d351295a3")
 		)
 		(instances
 			(project "voice-heart"
@@ -7059,7 +6810,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9ea21464-fb2b-4d5d-98a7-d8cad3389bc6")
+		(uuid "a750883f-03dd-439d-b66c-f8effb1813d7")
 	)
 	(label "VBAT"
 		(at 200.66 146.05 90)
@@ -7069,7 +6820,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "57ca4f4d-a510-4f55-9d39-63ccb8a41380")
+		(uuid "b7c30606-d675-4b8e-b66b-67fb06ac5fcc")
 	)
 	(wire
 		(pts
@@ -7080,7 +6831,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "62f8c1e9-ebdf-463c-8a79-2e0e33990b72")
+		(uuid "80cc8a60-f89f-4231-bd52-6ca0b638e62c")
 	)
 	(wire
 		(pts
@@ -7091,7 +6842,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b149d496-0e2a-4fc7-a8ad-83798088efc4")
+		(uuid "18967999-be3c-4465-8c40-b9de2f2a7c7c")
 	)
 	(label "LED_K"
 		(at 190.5 160.02 180)
@@ -7101,7 +6852,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "a3ce0ea4-b69a-43e6-b504-4df8fe60ba63")
+		(uuid "9355b092-1887-4ae3-9229-0d4727efcf62")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -7111,7 +6862,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9ba3f54d-be12-4fc3-a0fc-eecbe1aca9b0")
+		(uuid "f751d8a7-03cb-4e0f-b76e-4324460b2f46")
 		(property "Reference" "R10"
 			(at 223.012 152.4 90)
 			(show_name no)
@@ -7221,10 +6972,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "cf918b9a-ba64-4a78-a14b-c852fc8246bb")
+			(uuid "fc3555dd-2192-4a89-b3e0-49a1ef34e42d")
 		)
 		(pin "2"
-			(uuid "83ef1db1-5ed2-472a-b13a-87fd5e9f7af4")
+			(uuid "27b2cab4-442b-4ee1-954e-9fd146fb7739")
 		)
 		(instances
 			(project "voice-heart"
@@ -7243,7 +6994,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6b13e91d-39da-4e45-b16f-c4bb7f24b686")
+		(uuid "b30aa447-8efd-4798-b34a-472448ca1c71")
 		(property "Reference" "D10"
 			(at 217.17 157.48 0)
 			(show_name no)
@@ -7365,10 +7116,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "4bd7f16d-b60d-4f6c-a9ab-b53cb1b9d4a4")
+			(uuid "9ccbde6f-9599-4419-b857-9e82a1274d6b")
 		)
 		(pin "2"
-			(uuid "63b32974-27ee-43ae-b4aa-6b85f9ac15da")
+			(uuid "b5042093-5444-4890-ab4b-cd8515de531c")
 		)
 		(instances
 			(project "voice-heart"
@@ -7388,7 +7139,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ce91b90c-8605-418a-b9c4-b67becc131b2")
+		(uuid "04e93fe7-f3f6-414f-829a-089085c201a0")
 	)
 	(label "VBAT"
 		(at 220.98 146.05 90)
@@ -7398,7 +7149,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "be114447-ef9f-4da7-b1e4-7482fae7633e")
+		(uuid "00cd1ed1-7a65-4538-94b6-242c4b92fb9e")
 	)
 	(wire
 		(pts
@@ -7409,7 +7160,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "009326d6-e62d-4452-859b-7cebfa8483f8")
+		(uuid "be1e9dad-2d84-44ce-9986-5580ad4be54b")
 	)
 	(wire
 		(pts
@@ -7420,7 +7171,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b9a8e6e7-48d4-4993-88d6-5e50b2b0b19b")
+		(uuid "646f6545-2ce4-4c08-8afa-41641be480a8")
 	)
 	(label "LED_K"
 		(at 210.82 160.02 180)
@@ -7430,7 +7181,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "5ab9ebc7-e974-46b1-937c-14d820694594")
+		(uuid "e8240137-dd0a-473c-8e2c-293929dbfcfc")
 	)
 	(text "HOW IT WORKS"
 		(exclude_from_sim no)
@@ -7442,7 +7193,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "edca01b0-1a72-4c03-a589-035bba4094bf")
+		(uuid "debf45f4-4335-40ce-931e-80cbdf8f4668")
 	)
 	(text "Press PLAY: the ISD1820 plays the message, and D11 charges C1 so Q1 lights all 10 LEDs."
 		(exclude_from_sim no)
@@ -7453,7 +7204,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "780edfe3-783f-41d4-8c85-046fd4b44656")
+		(uuid "4896c187-6a8e-44bf-ad8c-9aee96c1d78d")
 	)
 	(text "C1 drains through R11 into Q1's base: LEDs stay bright ~10 s, then fade over ~15 s."
 		(exclude_from_sim no)
@@ -7464,7 +7215,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "77cccb4a-e1c6-4cd2-b0c0-8e158a149095")
+		(uuid "a6fbe768-f78a-4fa2-8546-c2c02c1fa76b")
 	)
 	(text "Hold REC to record up to 10 s (onboard mic). The message survives with batteries removed."
 		(exclude_from_sim no)
@@ -7475,7 +7226,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "f0264f74-6191-4552-acce-75cca1f3c6cc")
+		(uuid "94ad4f2b-5486-4a30-a409-05c48cd14955")
 	)
 	(text "Check your ISD1820's header order against the silkscreen before soldering."
 		(exclude_from_sim no)
@@ -7486,7 +7237,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "a1ebb634-fed4-4e81-a59d-2ba6bcde5a51")
+		(uuid "d9a0e6a3-0684-4e31-a025-7c5809b4c009")
 	)
 	(sheet_instances
 		(path "/"

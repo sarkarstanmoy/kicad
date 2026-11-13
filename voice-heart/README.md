@@ -12,7 +12,8 @@ message, then slowly fade out. Hold the small **REC** button to record a new mes
 | `voice-heart.kicad_pro` | KiCad 10 project (open this) |
 | `voice-heart.kicad_sch` | Schematic, with supplier and price fields on every part |
 | `voice-heart.kicad_pcb` | Heart-shaped 2-layer PCB, 96 x 86 mm, all through-hole |
-| `voice-heart.kicad_sym` / `voice-heart.pretty/` | ISD1820 module symbol and footprint |
+| `voice-heart.kicad_sym` / `voice-heart.pretty/` | ISD1820 module symbol and footprint (blue 2x6-header board) |
+| `voice-heart.kicad_dru` | Lion Circuits manufacturing limits as KiCad DRC rules |
 | `docs/voice-heart-schematic.pdf` | Printable schematic |
 | `docs/voice-heart-bom.csv` | Parts list |
 | `docs/pcb-front.png`, `docs/pcb-back.png` | 3D renders |
@@ -23,7 +24,7 @@ message, then slowly fade out. Hold the small **REC** button to record a new mes
 | Block | Parts | What it does |
 |---|---|---|
 | Power | 3x AAA box with switch and screw lid (4.5 V) | No coin cells, so nothing small and dangerous to swallow |
-| Voice | ISD1820 module + 8 Ω speaker | Records from its onboard mic while REC is held, plays the whole message on a PLAY press |
+| Voice | ISD1820 module (blue board) with its 8 Ω speaker plugged into the module | Records from its onboard mic while REC is held, plays the whole message on a PLAY press |
 | Buttons | SW1 12 mm PLAY (front centre), SW2 6 mm REC (left lobe) | Both pull the module's REC/PLAYE pins up to the battery (active HIGH) |
 | Glow timer | D11, D12, C1 22 µF, R11 470k, Q1 BC517 | A press charges C1; C1 drains slowly into Q1's base, so Q1 keeps the LEDs on about 10 s, then they fade over about 15 s |
 | Heart LEDs | D1–D10 red 5 mm, R1–R10 330 Ω | About 6 mA each, about 60 mA total while glowing |
@@ -33,20 +34,34 @@ Want a longer glow? Swap C1 for 47 µF (about twice as long). Shorter? Use 10 µ
 Battery life: about 0 mA when idle (and the box has its own switch), about 80 mA while
 playing. Hundreds of plays per set of AAAs.
 
-## Ordering the board
+## Ordering the board (Lion Circuits, cheapest settings)
 
-1. Upload `fab/voice-heart-gerbers.zip` to JLCPCB, PCBWay or an Indian maker such as
-   Lion Circuits / PCB Power.
-2. Settings: 2 layers, 1.6 mm, **solder mask: Red**, silkscreen: White, HASL, 5 pcs.
-   The board is under 100 x 100 mm, so it qualifies for the cheapest tier.
-3. Roughly ₹600–1,000 for 5 boards delivered to India from JLCPCB (cheaper locally).
+Upload `fab/voice-heart-gerbers.zip` at [lioncircuits.com/quote](https://www.lioncircuits.com/quote)
+and **keep every default**:
+
+| Setting | Value |
+|---|---|
+| Quantity | 5 (minimum) |
+| Board size | 96 x 86 mm (read from the Gerbers) |
+| Layers | 2, single PCB, 1 design |
+| Material / thickness | FR4-TG135, 1.6 mm |
+| Copper / finish | 1 oz, HASL |
+| Mask colour | **Green** (any other colour adds ₹500) |
+| Service | Standard (5–6 days), DTDC Standard shipping (free) |
+
+Quoted 13 Nov 2026: **₹1,652 + 18% GST = ₹1,949** for 5 boards, delivered.
+
+The design is checked against Lion Circuits' standard limits (`voice-heart.kicad_dru`):
+6 mil tracks/spacing, 12 mil via-to-track, 0.35 mm minimum drill, 6 mil annular ring,
+6 mil silkscreen. The board uses 0.5 mm tracks, 0.3 mm spacing and 0.45 mm via drills, so
+it passes with margin.
 
 ## Parts (about ₹250–350 plus the PCB)
 
-See `docs/voice-heart-bom.csv`. Everything is at Robu.in or CTC Secunderabad.
-Ask for an **ISD1820 module** (the red board with a mic and 3 buttons), a 28–40 mm
-8 Ω 0.5 W speaker, a **3x AAA box with switch and screw cover**, a BC517 Darlington
-transistor, and diffused red 5 mm LEDs.
+See `docs/voice-heart-bom.csv`. Ask for the **blue ISD1820 module with speaker**
+(Robu.in: "ISD1820 Recording Module Voice Board With On Board Mic and Loud Speaker"),
+a **3x AAA box with switch and screw cover**, a BC517 Darlington transistor, and red
+5 mm LEDs. No separate speaker is needed.
 
 ## Soldering order
 
@@ -58,19 +73,22 @@ Lowest parts first, so the board sits flat on the bench:
 4. C1 (22 µF): the long leg (+) goes in the hole marked **+**.
 5. D1–D10 (LEDs): the **long leg goes in the round pad**, the short leg in the square pad.
 6. SW2 (REC) and SW1 (PLAY, big button).
-7. Back side: solder a **female 6-pin header** onto U1's VCC…FT pads so the ISD1820
-   plugs in from the back. Run two short wires from the module's speaker terminals to
-   the SP+ / SP− pads next to it.
-8. Speaker: two wires to the SPEAKER pads, then glue the speaker to the back.
+7. Back side: solder a **2x6 female header** (or two 1x6 strips cut from a 1x40 strip)
+   onto U1's 12 holes. The blue ISD1820 plugs in **component side down**, its header pins
+   into this socket, so the module covers the back of the PLAY button. The socket
+   height keeps the trimmed legs underneath clear of the module.
+8. Speaker: plug its white connector into the module's speaker socket and glue the
+   speaker to the back.
 9. Battery box: red wire to **+**, black to **−** on the BATTERY pads. Glue the box to
    the back; it also works as a stand. A dab of hot glue over each wire joint stops the
    wires breaking.
 10. Trim every leg flush on the back, then cover the back with felt or a 3D-printed
     plate so there are no sharp points.
 
-> **Check before plugging in:** the header labels on the back (VCC GND REC PLE PLL FT)
-> must line up with the labels printed on your ISD1820 module. Most modules use this
-> order, but clones differ.
+> **Check before plugging in:** the back of the heart labels the module column
+> **VCC, GND, FT, P-L, P-E, REC**, matching the blue ISD1820's own silkscreen. The other
+> column ("JUMPERS") is the module's RPL/FT jumper pins and is not connected. **Remove
+> any jumper caps** on the module, or it will loop or pass the mic through.
 
 ## Recording a message
 
