@@ -1,0 +1,10 @@
+(fp_lib_table
+	(version 7)
+	(lib
+		(name "voice-heart")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/voice-heart.pretty")
+		(options "")
+		(descr "Voice heart footprints")
+	)
+)

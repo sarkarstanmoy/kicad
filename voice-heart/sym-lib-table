@@ -1,0 +1,10 @@
+(sym_lib_table
+	(version 7)
+	(lib
+		(name "voice-heart")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/voice-heart.kicad_sym")
+		(options "")
+		(descr "Voice heart parts")
+	)
+)
